@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context.xsd" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans">
+
+ <bean id="address" class="com.springcore.assignments.Address" >
+
+	    <property name="street" value="main raod"  />
+	    <property name="city" value="srikalahasti"  />
+	    <property name="state" value="Andhra Pradesh"  />
+	    <property name="Zip" value="517536"  />
+	    <property name="country" value="India"  />
+
+ </bean>
+
+ <bean id="customer" class="com.springcore.assignments.Customer" >
+
+		<property name="CustomerId" value="1"  />
+		<property name="CustomerName" value="naveen"  />
+		<property name="CustomerContact" value="9989563384"  />
+		<property name="address" ref="address" />
+
+</bean>
+
+</beans>
